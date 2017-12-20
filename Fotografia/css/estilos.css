@@ -1,0 +1,318 @@
+@font-face {
+	font-family: DancingScript-Regular;
+	src:url(../fuentes/DancingScript-Regular.ttf);
+}
+
+header{
+	animation-duration: 1.5s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%
+	}
+	100%{
+		margin-top: 0%
+	}
+}
+
+body {
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	font-family: DancingScript-Regular;
+	color: white;
+	background-color: black;
+}
+
+#contenido
+{
+	width: 900px;
+	margin: 0 auto;
+	font-size: 2vh;
+}
+
+#cabecera
+{
+	background-color: #5b7989;
+	border-radius: 1.5vh 1.5vh 0vh 0vh;
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.titulo{
+	float:left;
+	padding-left: 1em;
+}
+
+.menu{
+	float:right;
+	padding-right: 1em;
+	padding-top: 2em;
+}
+
+#cabecera h1{
+	text-shadow: 3px 3px 2px #000;
+}
+
+#cabecera a{
+	color:inherit;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+a:active{
+	text-decoration: none;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 50vh;
+}
+
+#central
+{
+background-color: #82C3A6;
+width: 100%;
+}
+
+#central img
+{
+	border: 1px solid #000;
+	width: 80%;
+	height: 90%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	box-shadow: 2px 2px 5px #000;
+}
+
+#secizq
+{
+	background-color: #D5C75F;
+	width: 50%;
+	font-size: 2.5vh;
+	text-decoration: underline black;
+}
+
+#secizq img
+{
+	border: 1px solid #000;
+	width:80%;
+	height: 90%;
+	margin-top: 2%;
+	margin-bottom: 0;
+	transition-duration: 2s;
+	box-shadow: 2px 2px 5px #000;
+}
+
+#secizq img:hover
+{
+	-webkit-transform: rotate(5deg);//Safari and Chrome
+	-moz-transform: rotate(5deg);//Firefox
+	-ms-transform: rotate(5deg); //IE
+	-o-transform:rotate(5deg);//Opera
+	transform: rotate(5deg);
+}
+
+#secder
+{
+	background-color: #D5C75F;
+	width: 50%;
+	font-size: 2.5vh;
+	text-decoration: underline black;
+}
+
+#secder img
+{
+	border: 1px solid #000;
+	width: 80%;
+	height: 90%;
+	margin-top: 2%;
+	margin-bottom: 0;
+	transition-duration: 2s;
+	box-shadow: 2px 2px 5px #000;
+}
+
+#secder img:hover
+{
+	transform:translate(20px,-10px);
+	-ms-transform:translate(20px,-10px); // IE 9
+	-moz-transform:translate(20px,-10px); // Firefox
+	-webkit-transform:translate(20px,-10px); // Safari and Chrome
+	-o-transform:translate(20px,-10px); // Opera
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	height: 25%;
+	background-color: #C6D5C5;
+	border-radius: 0vh 0vh 1.5vh 1.5vh;
+}
+
+#footer .paneles div{
+	width:25%;
+	float:left;
+	display: inline;
+}
+
+#footer .paneles h2, p{
+	font-family: DancingScript-Regular;
+	text-align: center;
+	color: #000;
+}
+
+#footer .face div{
+	clear: both;
+}
+
+.face ul{
+	list-style: none;
+	margin-left: 5em;
+}
+
+.face ul li .icon-facebook{background:white;}
+.face ul li .icon-twitter {background:white}
+.face ul li .icon-googleplus {background: #d95232;}
+
+.face span{
+	margin-right: .5em;
+}
+
+/*Estilos específicos de la pagina paisajes.html*/
+
+.imagenes{
+	overflow: hidden;
+	width: 100%;
+	background-color: #D5C75F;
+}
+
+.imagenes div{
+	width: 100%;
+}
+
+.imagenes img{
+	width: 33%;
+	margin-top: .3em;
+	margin-left: .1em;
+	margin-bottom: .3em;
+	float: left;
+}
+
+#imagen1{
+	-webkit-filter: blur(10px);
+}
+
+#imagen2{
+	-webkit-filter: grayscale(100%);
+}
+
+#imagen3{
+	-webkit-filter: sepia(90%);
+}
+
+#imagen4{
+	-webkit-filter: grayscale(100%);
+}
+
+#imagen6{
+	-webkit-filter: grayscale(100%);
+}
+
+@media screen and (max-width: 900px){
+
+	#contenido
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 640px){
+
+	#contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+#contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#contenido #cabecera .titulo div h1{
+		text-align:center;
+	}
+
+	#contenido #cabecera .menu{
+		position: relative;
+		right: 25%;
+	}
+
+	#central
+	{
+	width: 100%;
+	}
+	#secder
+	{
+	width: 100%;
+	height: 60%;
+	}
+	#secizq
+	{
+	width: 100%;
+	height: 60%;
+	}
+
+	.imagenes img{
+		width: 100%;
+	}
+
+	#footer{
+		height:80%;
+	}
+
+	#footer .paneles .face div{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#footer #contacto{
+		width:100%;
+		margin: 0 auto;
+	}
+
+	#footer #terminos{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#footer #redes{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#footer #derechos{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+}
